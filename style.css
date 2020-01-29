@@ -1,0 +1,998 @@
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+.Menu {
+  position: relative;
+  width: 960px;
+  height: 107px;
+  margin: 10px auto 30px auto;
+  background: url(images/fon.jpg) no-repeat left top;
+}
+
+.Main li {
+  display: inline-block;
+  padding-right: 12px;
+}
+
+ul.Main {
+  display: inline-block;
+  position: absolute;
+  top: 24px;
+  left: 271px;
+  padding-left: 0;
+}
+
+.Main a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #10cc15;
+  letter-spacing: -0.5px;
+}
+
+.Main li:hover a {
+  color: black;
+}
+
+ul.Submenu li:hover a,
+.Recept a:hover,
+.MainR a:hover {
+  color: black;
+}
+
+ul.Submenu {
+  padding-left: 0;
+  position: absolute;
+  top: 26px;
+  visibility: hidden;
+  background: white;
+  width: 106px;
+  border: solid #21e217 1px;
+  z-index: 1;
+}
+
+.Main ul.Submenu a {
+  display: block;
+  height: 23px;
+  margin: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #21e217;
+}
+
+li.Sub:hover .Submenu {
+  visibility: visible;
+}
+
+li.Sub {
+  position: relative;
+}
+
+.Menu_content {
+  position: relative;
+  height: 419px;
+  width: 960px;
+  background-color: white;
+  margin: auto;
+}
+
+.Menu_content img:first-child{
+  float: left;
+  margin-top: 12px;
+}
+
+.Menu_content img:last-of-type {
+  float: left;
+  margin-top: 74px;
+}
+
+.Menu_content p {
+  margin: 0;
+  font: bold 22px Open Sans;
+  text-align: center;
+  width: 420px;
+  float: right;
+  padding: 90px 46px 0 0;
+}
+
+.slide {
+  width: 180px;
+  position: absolute;
+  left: 140px;
+  top: 153px;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 45px;
+  color: #DEB17A;
+}
+ 
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+#Eat {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.Foto {
+  width: 960px;
+  height: 344px;
+  margin: 30px auto 0 auto;
+}
+
+.Foto > div {
+  display: inline-block;
+}
+
+.News {
+  height: 240px;
+  width: 960px;
+  margin: 60px auto 0 auto;
+}
+
+.News > div {
+  position: relative;
+  margin: 0 0 0 -2px;
+  display: inline-block;
+  width: 310px;
+  padding-right: 13px;
+}
+
+.News > div:last-child {
+  padding-right: 0;
+}
+
+.News .Foto1 {
+  position: absolute;
+  top: -30px;
+  left: 11px;
+  display: inline-block;
+  height: 103px;
+  width: 288px;
+  background: white;
+  opacity: 0.85;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.Foto1 a:not(:last-child) {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #636e66;
+  letter-spacing: -0.5px;
+}
+
+.Foto1 a:last-child {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #10cc15;
+  letter-spacing: -0.5px;
+}
+
+.News > div:nth-child(even) a:last-child {
+  font-size: 35px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.News img {
+  border: none;
+}
+
+.Foto1 a:hover {
+  color: black;
+}
+
+.Cent2 a:hover,
+.Cent div:first-child a:hover,
+.Cent3 a:hover,
+.Event a:hover {
+  color: #10cc15;
+}
+
+.Cent div:first-child {
+  display: inline-block;
+  float: left;
+  height: 500px;
+  width: 640px;
+  margin-right: 20px;
+  background: white;
+  text-align: center;
+}
+
+.Cent div:last-child {
+  display: inline-block;
+  height: 500px;
+  width: 300px;
+  background: white;
+  text-align: center;
+}
+
+.Cent {
+  width: 960px;
+  height: 500px;
+  margin: 30px auto 0 auto;
+}
+
+.Cent div:first-child a,
+.Cent div:last-child p:first-of-type {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+.Cent div:first-child p {
+  font: 14px Open Sans;
+  text-align: justify;
+  padding: 0 30px 0 29px;
+}
+
+.Cent div:last-child p:last-of-type {
+  font: 14px Open Sans;
+  text-align: center;
+  padding: 0 15px 0 15px;
+}
+
+.Cent > div:first-child img {
+  border: solid #21e217 1px;
+  margin: 29px 10px 14px 10px;
+}
+
+.Cent div:last-child img {
+  opacity: 0.8;
+}
+
+.Down {
+  width: 960px;
+  height: 70px;
+  background: #c7ccc2;
+  margin: 30px auto 0 auto;
+}
+
+.Down p {
+  display: inline-block;
+  margin: 20px 0 0 10px;
+  font-size: 15px;
+  color: #666262;
+}
+
+.Down ul {
+  display: inline-block;
+  padding: 0 42px 0 70px;
+}
+
+.Down li {
+  display: inline-block;
+  height: 23px;
+}
+
+.Down a {
+  text-transform: uppercase;
+  font: bold 14px Open Sans;
+  text-decoration: none;
+  color: #666262;
+  padding: 5px;
+}
+
+.Down li:hover {
+  background: #b6b8b2;
+}
+
+.Down p:last-of-type img {
+  height: 20px;
+  width: 20px;
+}
+
+.Down i {
+  font-size: 20px;
+}
+
+.But {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 583px;
+  right: 101px;
+  opacity: 0.1;
+}
+
+.But:hover {
+  opacity: 0.5;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  font: 13px Open Sans;
+}
+
+.breadcrumb li:last-of-type {
+  font-weight: bold;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: grey;
+}
+
+.breadcrumb {
+  width: 960px;
+  height: 20px;
+  margin: -19px auto 13px auto;
+}
+
+.breadcrumb ul {
+  padding: 0;
+}
+
+.breadcrumb a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.Cent2 {
+  width: 960px;
+  height: 290px;
+  margin: 30px auto 0 auto;
+  background: white;
+}
+
+.Cent2 a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Cent3 {
+  width: 960px;
+  height: 229px;
+  margin: 0 auto 0 auto;
+  background: white;
+}
+
+.Cent3 a,
+.Cent4 a {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  letter-spacing: 1.1px;
+}
+
+.Cent2 img,
+.Cent3 img,
+.Cent4 img {
+  float: left;
+  margin: 15px;
+  border: solid #10cc15 1px;
+}
+
+.Cent2 p,
+.Cent3 p,
+.Cent4 p {
+  font: 14px Open Sans;
+  text-align: justify;
+  padding: 15px 26px 0 0;
+  margin-left: 339px;
+}
+
+.Cent2 p:first-of-type {
+  padding-top: 24px;
+}
+
+.Cent3 p:last-of-type a {
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+div.Cent4 {
+  width: 960px;
+  height: 282px;
+  margin: 19px auto 0 auto;
+  background: white;
+}
+
+.MainR {
+  width: 960px;
+  height: 32px;
+  margin: 19px auto 0 auto;
+  background: white;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.MainR:nth-child(1) {
+  margin-top:0;
+}
+
+.MainR a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #10cc15;
+  margin: 0 14px 0 14px;
+}
+
+.Recept {
+  width: 960px;
+  height: 338px;
+  margin: 20px auto 0 auto;
+  padding-top: 35px;
+  background: white;
+}
+
+.Recept img {
+  margin: 0 0 0 35px;
+  float: left;
+  border: solid #10cc15 1px;
+}
+
+.Recept p {
+  margin-left: 492px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: grey;
+}
+
+.Recept p:first-of-type {
+  margin: 0 0 0 590px;
+  padding-top: 7px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  height: 34px;
+  width: 220px;
+  border-top: solid #10cc15 1px;
+  border-bottom: solid #10cc15 1px;
+  text-align: center;
+}
+
+.Recept ul {
+  margin-left: 492px;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: grey;
+}
+
+.Recept a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #10cc15;
+}
+
+.Event {
+  width: 960px;
+  margin: 0 auto 0 auto;
+}
+
+.Event > div {
+  display: inline-block;
+  width: 307px;
+  background: white;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 15px 20px 0;
+}
+
+.Event div:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.Event div:nth-child(4), 
+.Event div:nth-child(5), 
+.Event div:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.Event img {
+  width: 280px;
+  height:216px;
+  border: solid #10cc15 1px;
+  transition: transform 0.5s;
+}
+
+.Event img:hover {
+  transform: scale(1.1);
+}
+
+.Event a {
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+
+.Event p {
+  font: 15px Open Sans;
+}
+
+.Article {
+  width: 960px;
+  margin: 16px auto 0 auto;
+  background: white;
+  font: 15px Open Sans;
+  text-align: justify;
+}
+
+.Article img {
+  width: 860px;
+}
+
+.Article p {
+  padding: 0 50px 32px 50px;
+}
+
+.Article p:first-child {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  color: #10cc15;
+  padding: 30px 0 17px 0;
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+#Article_sm_img{
+  float: left;
+  margin: 0 20px 10px 0;
+  width: auto;
+}
+
+.Article span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#Under {
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.Salad {
+  width: 960px;
+  margin: 0 auto 0 auto;
+  padding-top: 30px;
+  background: white;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.Salad img {
+  float: left;
+  margin: 0 46px 0 20px;
+  border: solid #10cc15 1px;
+}
+
+.Salad ul {
+  margin-left: 418px;
+}
+
+.Salad p:first-of-type {
+  margin: 0 0 0 592px;
+  padding-top: 6px;
+  text-transform: uppercase;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #10cc15;
+  height: 34px;
+  width: 220px;
+  border-top: solid #10cc15 1px;
+  border-bottom: solid #10cc15 1px;
+}
+
+.Salad p {
+  margin-left: 480px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: grey;
+}
+
+.Salad p:last-of-type {
+  font: 15px Open Sans;
+  text-align: justify;
+  padding: 0 20px 20px 20px;
+  margin-left: 0;
+  text-transform: none;
+  color: black;
+}
+
+.Salad ul {
+  margin-left: 480px;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: grey;
+}
+
+.Menu2 {
+  height: auto;
+  width: 100%;
+  background: white;
+  margin: 0;
+  display: none;
+  position: relative;
+}
+
+.Menu2 img{
+  height: 56px;
+  border: none;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+.main-menu {
+  display: none;
+  padding: 0 0 0 8px;
+  margin: 0;
+}
+
+.main-menu li {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.main-menu a {
+  display: block;
+  border-bottom: 1px solid #10cc15;
+  color: #10cc15;
+  padding: 0.2em;
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  color: black;
+}
+
+.button {
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  display: inline-block;
+  cursor: pointer;
+  width: 35px;
+}
+
+.Menu2 i {
+  font-size: 28px;
+  color: #10cc15;
+}
+
+.Menu2 i:last-of-type {
+  display: none;
+}
+
+#menu-mobile:checked + nav .button i:first-of-type {
+  display: none;
+}
+
+#menu-mobile:checked + nav .button i:last-of-type {
+  display: block;
+  color: black;
+}
+
+#menu-mobile:checked + nav .main-menu {
+  display: block;
+}
+
+#Logo {
+  font-size: 62px; 
+  opacity: 0;
+}
+
+#Copy {
+  font: bold 13px Open Sans;
+}
+
+@media all and (max-width:980px) {
+.Menu {width: 815px; background-size: 815px; margin-bottom: 7px;}
+.Menu_content {height: 348px; width: 815px; }
+.Menu_content p {width: 412px; font: bold 17px Open Sans; padding: 90px 16px 0 0;}
+.Menu_content img:first-child {width: 371px;}
+.Menu_content img:last-of-type {margin-top: 32px;}
+.slide {left: 100px; top: 124px; font-size: 41px;}
+.Main a {font-size: 19px; }
+.Main li {padding-right: 9px;}
+ul.Main {top: 18px; left: 184px; padding-left: 46px;}
+ul.Submenu {top: 23px; width: 87px;}
+.Main ul.Submenu a {height: 19px;}
+.News {width: 815px; margin-top: 50px;}
+.News > div {width: 260px; padding-right: 15px;}
+.News img {width: 260px; height: 226px;}
+.News .Foto1 { width: 240px; height: 83px;}
+.Foto1 a:last-child, .News > div:nth-child(even) a:last-child  {font-size: 22px;}
+.Foto1 a:not(:last-child) {font-size: 16px;}
+.Cent {width: 815px; margin-top: 6px}
+.Cent div:first-child {width: 535px;}
+.Cent > div:first-child img {width: 480px;}
+.Cent div:last-child {width: 260px;}
+.Cent div:last-child img {width: 260px; height: 190px;}
+.Cent2 {width: 815px; height: 246px; margin-top: 19px;}
+.Cent2 img {width: 260px; height: 215px;}
+.Cent2 p, .Cent4 p {margin: 0 0 0 302px;}
+.Cent2 a, .Cent3 a, .Cent4 a {font-size: 16px;}
+.Cent3 {width: 815px; height: auto; margin-top: 19px;}
+.Cent3 img {width: 260px; }
+.Cent3 p {margin: 0 0 0 302px;}
+.Down {width: 815px; margin-top: 19px}
+.Down a {font-size: 13px; padding: 2px;}
+.Down ul {padding: 0 27px 0 34px;}
+.breadcrumb {width: 815px; margin-bottom: -5px;}
+.MainR {width: 815px;}
+.Recept {width: 815px; height: 272px; padding-top: 20px;}
+.Recept img {width: 309px; height: 249px; margin: 0 0 0 20px;} 
+.Recept p:first-of-type {margin: 0 0 0 479px;}
+.Recept p, .Recept ul{margin: 12px 0 0 387px;}
+.Event {width: 815px; margin-top: 16px;}
+.Event > div {width: 265px; margin-right: 6px;}
+.Event img {width: 240px; height: 200px;}
+.Event div:last-of-type {margin-right: 0;}
+.Event a {font-size: 19px;}
+.Article {width: 815px;}
+.Article img {width: 715px;}
+#Article_sm_img {width: auto;}
+#animal {padding-left: 0px;}
+.Salad {width: 815px; margin-top: 18px;}
+.Salad img {width: 309px; height: 249px;}
+.Salad p {margin: 10px 0 0 379px;}
+.Salad p:first-of-type {margin-left: 485px;}
+.Salad ul {font-size: 17px; margin-left: 338px;}
+}
+
+@media all and (max-width:835px) {
+.Menu {width: 630px; height: 69px; background-size: 630px; margin-bottom: 17px;}
+.Main a {font-size: 16px; }
+ul.Main {top: 9px; left: 140px; padding-left: 26px;}
+.Main li {padding-right: 3px;}
+ul.Submenu {top: 19px;}
+.Menu_content {width: 630px; height: 290px;}
+.Menu_content img:first-child {width: 300px; height: auto;}
+.Menu_content img:last-of-type {height: 240px; margin-top: 25px;}
+.Menu_content p {width: 286px; font: bold 16px Open Sans; padding: 57px 22px 0 0;}
+.slide {width: 120px; left: 95px; top: 106px; font-size: 30px; }
+div.New1 {display: none;}
+.News {width: 630px;}
+.News > div {width: 300px; padding-right: 28px;}
+.News img {width: 100%; }
+.News > div:last-child {padding-right: 0;}
+.News .Foto1 { width: 277px;}
+.Foto1 a:not(:last-child) {font-size: 14px;}
+.Cent div:last-child {display: none;}
+.Cent {width: 630px; height: auto;}
+.Cent div:first-child {width: 630px;  height: 465px; }
+.Cent > div:first-child img {width: 580px;}
+.Cent2 {width: 630px; height: 246px; }
+.Cent2 p, .Cent3 p, .Cent4 p {padding-top: 0px}
+.Cent2 p:first-of-type, .Cent3 p:first-of-type  {padding-top: 17px;}
+.Cent2 p {margin: 15px 0 0 302px;}
+.Cent3 {width: 630px; }
+.Cent3 a {font-size: 15px;}
+.Cent3 p {font-size: 13px; padding-bottom: 10px;}
+.Down {width: 630px; height: 55px;}
+.Down a {text-transform: none; font-size: 12px; padding: 2px;}
+.Down ul {padding: 0 2px 0 12px;}
+.Down p {font-size: 12px;}
+.Down i {font-size: 15px;}
+.breadcrumb {width: 630px; margin: -8px auto -8px auto;}
+.MainR {width: 630px;}
+.MainR img {width: 200px;}
+.Recept {width: 630px; height: 240px; padding-top: 20px;}
+.Recept img {width: 280px; height: 218px; margin: 0 0 0 20px;} 
+.Recept p:first-of-type {margin: 0 0 0 364px;}
+.Recept p, .Recept ul{margin: 12px 0 0 347px; font-size: 16px;}
+.Recept a, .MainR a {font-size: 20px;}
+.Recept p:first-of-type {height: 30px;}
+.Event {width: 630px;}
+.Event > div {width: 303px; margin-right: 20px;}
+.Event img {width: 277px; height: 205px;}
+.Event div:nth-child(3n+3) {margin-right: 20px;}
+.Event div:nth-child(2n+2) {margin-right: 0;}
+.Event > div p {margin: 3px 0 10px 0;}
+.Event > div p:last-of-type {font-size: 14px;}
+.Article {width: 630px;}
+.Article p {font-size: 14px; padding: 0 35px 20px 35px;}
+.Article p:first-child {font-size: 21px;}
+.Article img {width: 560px;}
+.Salad {width: 630px; font-size: 16px;}
+.Salad img {width: 280px; height: 218px;}
+.Salad p {margin-left: 348px;}
+.Salad p:first-of-type {margin-left: 379px; padding: 7px 0 0px 0; font-size: 22px;}
+.Salad p:last-of-type {font-size: 14px;}
+.Salad ul {font-size: 15px; margin: 7px 20px 0 309px;}
+}
+
+@media all and (max-width:650px) {
+.Menu2, #Eat {display: block;}
+.Menu {display: none;}
+.Menu_content {width:100%; height: auto; margin-top: 12px;}
+.Menu_content p {width:100%; background: white; padding: 16px 0 19px 0; border-top: solid #10CC15 1px; font-size: 15px;}
+.Menu_content img:last-of-type, .Menu_content img:first-child, .slide, .slides {display: none;}
+div.New1 {display: block;}
+.News {width: 100%; height: auto; margin-top: 60px;}
+.News > div {width: 100%; height: auto; padding-right: 0; margin: 10px 0 47px 0;}
+.News img {width: 100%; height: auto;}
+.News .Foto1 { width: 100%; left: 0;}
+.Foto1 a:not(:last-child) {font-size: 15px;}
+.Foto1 a:last-child, .News > div:nth-child(even) a:last-child {font-size: 20px;}
+.News > div:last-child {margin-bottom: 12px;}
+.Cent, .Cent div:first-child {width: 100%; height: auto; margin-top: 8px;}
+.Cent > div:first-child img {width: 100%; margin:0 0 5px 0; border: none;}
+.Cent div:first-child p {padding: 0 13px 0 13px; font-size: 12px;}
+.Cent2, .Cent3 {width: 100%; height: auto; margin-top: 30px;}
+.Cent2 img, .Cent3 img {width: 100%; height: auto; margin:0; padding:0 0 10px 0; border: none;}
+.Cent2 p, .Cent3 p {margin: 12px 0 0 0; padding: 0 13px 5px 13px; font-size: 12px;}
+.Cent2 p:first-of-type, .Cent3 p:first-of-type {text-align: center; padding-bottom: 0}
+.Cent2 a, .Cent3 a, .Cent div:first-child a {font-size: 15px;}
+.Down {width: 100%; height: auto; text-align: center;}
+.Down p {margin: 0; font-size: 13px; padding-top: 8px; display:block;}
+.Down ul {padding: 0; margin: 11px 0 5px 0;}
+.Down a {font-size: 13px; padding: 3px;}
+.Down i {font-size: 18px; padding-bottom: 8px;}
+.breadcrumb {width: 100%; margin: -12px 0 -24px 0;}
+.breadcrumb li {font-size: 11px;}
+.MainR {display: none;}
+.Recept {width: 100%; height: auto; padding: 0 0 3px 0; margin-top: 30px; }
+div.Recept:first-of-type {margin-top: 0;}
+.Recept img {float: none; width: 100%; height: auto; border: none; margin-left:0;} 
+.Recept p:first-of-type {height: 26px; width: 145px; padding: 0 0 4px 0; margin: 6px auto 0 auto;}
+.Recept p, .Recept ul { margin: 12px 0 0 31px; font-size: 14px;}
+.Recept li {display: inline-block; padding-right: 12px;}
+.Recept a, .MainR a {font-size: 15px;}
+.Event {width: 100%; margin-top: 19px;}
+.Event > div {width: 100%; height: auto; padding-top: 0; margin: 30px 0 0 0;}
+.Event div:nth-child(1) {margin-top: 10px;}
+.Event div:nth-child(3n+3) {margin-right: 0;}
+.Event img {width: 100%; height: auto; border: none;}
+.Event a {font-size: 15px;}
+.Event > div p:last-of-type {font-size: 13px;}
+.Event img:hover {transform: scale(0.92); }
+.Event p {margin: 4px 0 10px 0;}
+.Article {width: 100%; margin-top: 30px;}
+.Article img {width: 100%;}
+.Article p:first-child {font-size: 16px; padding: 11px 0 0 0;}
+.Article p {font-size: 13px; padding: 0 10px 10px 10px;}
+.Article span {font-size: 15px;}
+#Article_sm_img {width: 100%;}
+#Under {font-size: 14px;}
+.Salad {width: 100%; font-size: 13px; padding-top: 0; margin-top: 29px;}
+.Salad img {width: 100%; height: auto; margin: 0; border: none; float: none;}
+.Salad p:first-of-type {height: 24px; width: 160px;margin: 5px auto 0 auto; padding: 5px 0 0 0; font-size: 16px; text-align: center;}
+.Salad p:last-of-type {font-size: 13px; padding: 20px 10px 20px 10px;}
+.Salad p {font-size: 18px; margin: 15px 0 7px 10px;}
+.Salad ul {margin: 0 10px 0 0; padding-left: 10px; }
+.Salad li {display: inline;}
+#Eat {display: block; width:100%}
+}
+
+@-moz-document url-prefix() {
+  .Main li {padding-right: 7px;}
+  .News > div:nth-child(2n) a:last-child {font-size: 33px; }
+  .Foto1 a:last-child {font-size: 24px; letter-spacing: 0;}
+  .Cent2 a, .Cent4 a, .Cent div:first-child a, .Cent div:last-child p:first-of-type {font-size: 17px;}
+  .Cent3 a, .Event a {font-size: 20px;}
+ 
+   @media all and (max-width:980px) {
+   .Main li {padding-right: 4px;}
+   .Foto1 a:last-child {font-size: 20px;}
+   .News > div:nth-child(2n) a:last-child {font-size: 30px;}
+   .Foto1 a:not(:last-child) {font-size: 15px;}
+   .Salad p:last-of-type {padding-top: 20px;}
+   .Event a {font-size: 15px;}
+    } 
+
+   @media all and (max-width:835px) {
+    ul.Main {left: 130px;}
+    .Main a, .Main ul.Submenu a {font-size: 15px; letter-spacing: 0;}
+    .Cent2 a, .Cent3 a, .Cent4 a, .Event a, .Cent div:first-child a, .Cent div:last-child p:first-of-type {font-size: 15px;}
+    .Cent3 a {font-size: 17px; letter-spacing: 1.1px;}
+    .Event a{font-size: 17px; letter-spacing: 1.1px;}
+    .Event > div p:last-of-type {font-size: 13px;}
+    .Article {font-size: 16px;}
+    .Article p:first-child {font-size: 22px;}
+    .Recept a, .MainR a {font-size: 19px;}
+    .Down p {margin-left: 4px;}
+    .Down ul {padding-left: 7px;}
+     }
+
+    @media all and (max-width:650px) {
+    .Recept p:first-of-type {width: 170px;}
+    .Recept a, .MainR a {font-size: 17px;}
+    }
+}
+
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none){
+  .Main li {padding-right: 7px;}
+  .News > div:nth-child(2n) a:last-child {font-size: 33px; }
+  .Foto1 a:last-child {font-size: 24px; letter-spacing: 0;}
+  .Cent2 a, .Cent3 a, .Cent4 a, .Event a, .Cent div:first-child a, .Cent div:last-child p:first-of-type {font-size: 17px;}
+}
+ @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:980px) and (min-width: 835px) {
+   .Main li {padding-right: 4px;}
+   ul.Main {left: 177px;}
+   .Foto1 a:last-child {font-size: 20px;}
+   .News > div:nth-child(2n) a:last-child {font-size: 30px;}
+   .Foto1 a:not(:last-child) {font-size: 15px;}
+   .Salad p:last-of-type {padding-top: 20px}
+}
+ @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:835px) and (min-width: 650px) {
+     ul.Main {left: 130px;}
+    .Main li {padding-right: 3px;}
+    .Main a, .Main ul.Submenu a {font-size: 15px; letter-spacing: 0;}
+     ul.Submenu {top: 18px;}
+    .Foto1 a:last-child {font-size: 20px;}
+    .News > div:nth-child(2n) a:last-child {font-size: 30px;}
+    .Cent2 a, .Cent3 a, .Cent4 a, .Event a, .Cent div:first-child a, .Cent div:last-child p:first-of-type {font-size: 15px;}
+    .Event a{font-size: 12px;}
+    .Event > div p:last-of-type {font-size: 13px;}
+    .Article {font-size: 16px;}
+    .Article p:first-child {font-size: 22px;}
+    .Recept a, .MainR a {font-size: 19px;}
+    .Salad p:last-of-type {padding-top: 20px}
+    .Down p {margin-left: 2px;}
+    .Down ul {padding-left: 2px;}
+}
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width:650px) {
+     .Foto1 a:last-child {font-size: 20px;}
+    .News > div:nth-child(2n) a:last-child {font-size: 30px;}
+    .Cent2 a, .Cent3 a, .Cent4 a, .Event a, .Cent div:first-child a, .Cent div:last-child p:first-of-type {font-size: 15px;}
+    .Event a{font-size: 12px;}
+    .Event > div p:last-of-type {font-size: 13px;}
+    .Article {font-size: 16px;}
+    .Article p:first-child {font-size: 22px;}
+    .Recept p:first-of-type {width: 170px;}
+    .Recept a, .MainR a {font-size: 17px;}
+}
